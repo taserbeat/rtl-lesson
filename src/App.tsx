@@ -4,10 +4,17 @@ import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import RenderInput from './RenderInput';
+import FrameworkList, { Framwwork } from './FrameworkList';
 
 const outputConsole = (value: string) => {
   console.log(value);
 };
+
+const framwworks: Framwwork[] = [
+  { id: 0, item: 'React' },
+  { id: 1, item: 'Angular' },
+  { id: 2, item: 'Vue' },
+];
 
 function App() {
   return (
@@ -16,6 +23,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <RenderInput outputConsole={outputConsole} />
+        <FrameworkList frameworks={framwworks} />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
