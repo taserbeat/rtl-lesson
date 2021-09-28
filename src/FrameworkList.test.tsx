@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, cleanup, screen } from '@testing-library/react';
 
 import FrameworkList, { Framwwork } from './FrameworkList';
