@@ -5,6 +5,7 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 import RenderInput from './RenderInput';
 import FrameworkList, { Framwwork } from './FrameworkList';
+import MockServer from './MockServer';
 
 const outputConsole = (value: string) => {
   console.log(value);
@@ -24,6 +25,8 @@ function App() {
         <Counter />
         <RenderInput outputConsole={outputConsole} />
         <FrameworkList frameworks={framwworks} />
+        <MockServer />
+
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
