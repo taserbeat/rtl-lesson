@@ -8,10 +8,13 @@ const sleep = (msec: number) => {
   while (new Date().getMilliseconds() - start.getMilliseconds() < msec);
 };
 
-const fetchDummy = createAsyncThunk('fetch/dummy', async (num: number) => {
-  await sleep(2000);
-  return num;
-});
+export const fetchDummy = createAsyncThunk(
+  'fetch/dummy',
+  async (num: number) => {
+    await sleep(2000);
+    return num;
+  }
+);
 
 export const fetchJson = createAsyncThunk('fetch/api', async () => {
   const response = await axios.get<User>(
