@@ -7,6 +7,7 @@ import RenderInput from './RenderInput';
 import FrameworkList, { Framwwork } from './FrameworkList';
 import MockServer from './MockServer';
 import Redux from './Redux';
+import ReduxAsync from './ReduxAsync';
 
 const outputConsole = (value: string) => {
   console.log(value);
@@ -28,6 +29,7 @@ function App() {
         <FrameworkList frameworks={framwworks} />
         <MockServer />
         <Redux />
+        <ReduxAsync />
 
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
