@@ -5,7 +5,7 @@ import { User } from '../../UseEffectRender';
 
 const sleep = (msec: number) => {
   const start = new Date();
-  while (new Date().getMilliseconds() - start.getMilliseconds() < msec);
+  while (new Date().getTime() - start.getTime() < msec);
 };
 
 export const fetchDummy = createAsyncThunk(
