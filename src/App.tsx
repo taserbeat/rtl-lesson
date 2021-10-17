@@ -8,6 +8,7 @@ import FrameworkList, { Framwwork } from './FrameworkList';
 import MockServer from './MockServer';
 import Redux from './Redux';
 import ReduxAsync from './ReduxAsync';
+import CustomHooks from './CustomHooks';
 
 const outputConsole = (value: string) => {
   console.log(value);
@@ -30,6 +31,7 @@ function App() {
         <MockServer />
         <Redux />
         <ReduxAsync />
+        <CustomHooks />
 
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
